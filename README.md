@@ -4,5 +4,5 @@
 # make sure pages that arent active are disabled
 # include video of interactive use of site
 # one interactive feature (map)
-# exernal link open new tab
-# write challenges 
+
+# Challenges 
