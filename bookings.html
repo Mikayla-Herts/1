@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Cafe Beans</title>
+    <link rel="icon" type="image" href="dark_logo.png">
+    <style>
+:root {
+    --cream: #FFE2AC;
+    --beige: #E8D1A7;
+    --latte: #B38E65;
+    --coffee: #542E1A;
+    --espresso: #280B03;
+
+    --bg: var(--cream);
+    --text: var(--espresso);
+}
+
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+
+}
+
+.navbar {
+    background: transparent;
+}
+
+.navbar-nav {
+    background: var(--latte);
+    padding: 8px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.navbar .nav-link {
+    color: var(--text) ;
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+
+.navbar .nav-link:hover {
+    background: var(--cream);
+    color: var(--espresso) ;
+}
+
+
+.navbar .nav-link.active {
+    background: var(--cream);
+    color: var(--espresso) ;
+}
+
+
+.navbar .btn-light {
+    background: var(--latte);
+    border-radius: 50px;
+    border: none;
+}
+
+
+form {
+    background: var(--latte) ;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+
+.form-control,
+.form-select,
+textarea {
+    background: var(--beige);
+    border: none;
+    border-radius: 10px;
+    color: var(--text);
+}
+
+.form-control:focus,
+.form-select:focus {
+    background: var(--beige);
+    box-shadow: 0 0 0 2px var(--coffee);
+}
+
+button.btn-light {
+    background: var(--cream);
+    color: var(--espresso);
+    border-radius: 20px;
+    padding: 8px 20px;
+    border: none;
+    font-weight: 600;
+}
+
+button.btn-light:hover {
+    background: var(--beige);
+}
+
+
+h1 {
+    color: var(--coffee);
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="dark_logo.png" width="60" height="60" class="me-2" alt="Logo">
+                    Cafe Beans
+                </a>
+
+                <!-- Mobile toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar content -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+
+                    <!-- Center menu -->
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link disabled" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link disabled" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" href="bookings.html">Bookings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about_us.html">About Us</a>
+                        </li>
+                    </ul>
+
+                    <!-- Right side -->
+                    <div class="d-flex gap-3">
+                        <button type="button" class="btn btn-light" disabled>
+                            <img src="dark_mode.svg"  alt="">
+                        </button>
+                        <a href="profile_login.html" type="btn btn-light" class="btn btn-light">
+                            <img src="profile.svg" alt="Profile">
+                        </a>
+                        <button type="button" class="btn btn-light" disabled>
+                            <img src="shopping_basket.svg" alt="Basket">
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+    <main class="container my-5">
+        <h1 class="mb-4 text-center">Book a Table</h1>
+        <form action="/action_page.php" class="needs-validation">
+            <div class="p-3">
+                <div class="row">
+                    <div class="col">
+                        <label for="fname" class="form-label">First Name:</label>
+                        <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div> 
+                    </div>
+                    <div class="col">
+                        <label for="lname" class="form-label">Last Name:</label>
+                        <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="email" class="form-label">Email Address:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="col">
+                        <label for="tel" class="form-label">Phone Number:</label>
+                        <input type="tel" class="form-control" id="tel" placeholder="Enter Phone Number" name="tel" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+
+                <div class="mb-3"></div>
+                    <div class="row">
+                        <div class="col">
+                        <label for="date" class="form-label">Pick a time and date for your booking.</label>
+                        <input type="datetime-local" class="form-control" placeholder="Please enter a date" name="date" required>
+                        </div>
+                    </div>
+                <div class="mb-3"></div>
+                <div class="form-floating">
+                    <select class="form-select" id="sel1" name="sellist">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                    <small id="passwordHelpBlock" class="form-text text-muted">
+                        To make a booking of more than 10 people, please call us on: 01923 812000
+                    </small>
+                    <label for="sel1" class="form-label">How many people would you like to book for? :</label>
+                </div>
+                <div class="mb-3"></div>
+                <div class="form-floating">
+                    <select class="form-select" id="sel2" name="sellist">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                    </select>
+                    <label for="sel1" class="form-label">How many hours would you like to book for? :</label>
+                </div>
+
+                <div class="mb-3 mt-3">
+                    <label for="comment">Special Requirements:</label>
+                    <textarea class="form-control" rows="3" id="comment" name="text"></textarea>
+                </div>
+                </div>
+                <button onclick="alert('Booking Successful!') ; alert('Thank you for booking with Cafe Beans. We look forward to welcoming you!') " class="btn btn-light">Book Now</button>
+                
+                
+        </form>
+
+    </main>
+</body>
+</html>
