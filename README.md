@@ -12,6 +12,11 @@
    
 ## Introduction
 ## Challenges
+muddling up code and not referencing
+dark mode toggle without js
+form required fields 
+submit button
+
 ## Revised Wireframe
 ## Annotated Screenshots
 ## User Stories
