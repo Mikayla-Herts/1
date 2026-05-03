@@ -19,7 +19,7 @@
 
 ## Revised Wireframe
 ### Home Page
-![Home page screenshot](Home page.JPG)
+![Home page screenshot](Homepage.JPG)
 
 ## Annotated Screenshots
 
