@@ -22,4 +22,17 @@ submit button
 
 ## User Stories
 ## Testing
-
+### HTMl Validator 
+![W3C HTML](IMG_2293.png)
+### CSS Validator 
+![CSS](IMG_2296.jpeg)
+![CSS](IMG_2297.png)
+![CSS](IMG_2298.png)
+### Google Lighthouse  
+![Lighthouse](IMG_2299.png)
+![Lighthouse](IMG_2300.png)
+![Lighthouse](IMG_2301.png)
+![Lighthouse](IMG_2302.png)
+![Lighthouse](IMG_2303.png)
+![Lighthouse](IMG_2304.png)
+![Lighthouse](IMG_2305.png)
