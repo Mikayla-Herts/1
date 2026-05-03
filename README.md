@@ -18,6 +18,9 @@
 -submit button
 
 ## Revised Wireframe
+### Home Page
+![Home page screenshot](Home page.JPG)
+
 ## Annotated Screenshots
 
 ## User Stories
