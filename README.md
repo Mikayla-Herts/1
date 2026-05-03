@@ -19,13 +19,13 @@
 
 ## Revised Wireframe
 ### Home Page
-![Home page screenshot](SS/Homepage.JPG)
+![Home page screenshot](SS/Home%20page.JPG)
 ### Interactive Map
 ![map](SS/Map.JPG)
 ###  Nav Pill Hover
-![pill](SS/PillHover.JPG)
+![pill](SS/Pill%20Hover.JPG)
 ### Popup confirmation
-![form](SS/Popup+form.JPG)
+![form](SS/Popup%20+%20form.JPG)
 ## Annotated Screenshots
 
 ## User Stories
