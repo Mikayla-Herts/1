@@ -12,10 +12,10 @@
    
 ## Introduction
 ## Challenges
-muddling up code and not referencing
-dark mode toggle without js
-form required fields 
-submit button
+-muddling up code and not referencing
+- I wasnt able to have dark mode toggle with implementing JS, so I disabled the button. In hindsight, I should have removed the button altogether. 
+- I wasnt able to get my forms required fields to work. only on the profile, could I have the broswer use its own required but without a working button, it was not successful. 
+-submit button
 
 ## Revised Wireframe
 ## Annotated Screenshots
